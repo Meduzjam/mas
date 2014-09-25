@@ -21,7 +21,7 @@ int main()
  
  serv.sin_family = AF_INET;
  serv.sin_port = htons(53000);
- serv.sin_addr.s_addr = inet_addr("127.0.0.2");
+ serv.sin_addr.s_addr = inet_addr("127.0.0.21");
 
  if(bind(sockfd, (struct sockaddr *)&serv, sizeof(serv))==-1) {
 		perror("udps: не удается занять порт");
